@@ -260,3 +260,119 @@ list_of_numbers = list(map(int, list_of_strings)) # cписок чисел
 
 print(sum(list_of_numbers[::3])) # sum() вычисляет сумму элементов списка
 
+L = ["а", "б", "в", 1, 2, 3, 4]
+print (L[ 3::-1 ])
+# [1, "в", "б", "а"]
+
+L = ["а", "б", "в", 1, 2, 3, 4]
+print(L[ 6:3:-1])
+# [4, 3, 2]
+
+# имеем список с числами с плавающей точкой
+L = [3.3, 4.4, 5.5, 6.6] 
+
+# печатаем сам объект map
+print(map(round, L)) # к каждому элементу применяем функцию округления
+# <map object at 0x7fd7e86eb6a0>
+
+# и результат его преобразования в список
+print(list(map(round, L)))
+# [3, 4, 6, 7]
+
+# имеем список с числами с плавающей точкой
+L = [3.3, 4.4, 5.5, 6.6] 
+
+# печатаем сам объект map
+print(map(round, L)) # к каждому элементу применяем функцию округления
+# <map object at 0x7fd7e86eb6a0>
+
+# и результат его преобразования в список
+print(list(map(round, L)))
+# [3, 4, 6, 7]
+
+person = {} # с помощью фигурных скобок можно создать словарь
+
+# словарь заполняется по принципу - ключ:объект (через двоеточие)
+person = {'name' : 'Ivan Petrov'}
+
+# в него можно также добавлять новые объекты по ключу
+person['age'] = 25
+person['email'] = 'ivan_petrov@example.com'
+person['phone'] = '8(800)555-35-35'
+
+print(person)
+# {'name': 'Ivan Petrov', 'age': 25, 'email': 'ivan_petrov@example.com', 'phone': '8(800)555-35-35'}
+
+person.pop('phone')
+
+print(person)
+# {'name': 'Ivan Petrov', 'age': 25, 'email': 'ivan_petrov@example.com'}
+
+# Что выведет программа? Впишите получившуюся строку без использования кавычек.
+
+d = {'day' : 22, 'month' : 6, 'year' : 2015}
+
+print("||".join(d.keys()))
+
+abit1 = {"ФИО" : 'Фадеев О.Е.', "Количество баллов" : 283, "Заявление" : True}
+abit2 = {"ФИО" : 'Дружинин И.Я.', "Количество баллов" : 278, "Заявление" : False}
+abit3 = {"ФИО" : 'Афанасьев Д.Н.', "Количество баллов" : 276, "Заявление" : True}
+
+abits = [abit1, abit2, abit3]
+
+print(abits)
+# [{'ФИО': 'Фадеев О.Е.', 'Количество баллов': 283, 'Заявление': True},
+# {'ФИО': 'Дружинин И.Я.', 'Количество баллов': 278, 'Заявление': False},
+# {'ФИО': 'Афанасьев Д.Н.', 'Количество баллов': 276, 'Заявление': True}]
+
+abit4 = {"ФИО" : 'Любимчиков А.Я.', "Количество баллов" : 269, "Заявление" : True}
+
+abits.append(abit4)
+
+print(abits)
+# [{'ФИО': 'Фадеев О.Е.', 'Количество баллов': 283, 'Заявление': True},
+# {'ФИО': 'Дружинин И.Я.', 'Количество баллов': 278, 'Заявление': False}, 
+# {'ФИО': 'Афанасьев Д.Н.', 'Количество баллов': 276, 'Заявление': True},
+# {'ФИО': 'Любимчиков А.Я.', 'Количество баллов': 269, 'Заявление': True}]
+
+L = [1,1,2,3,2]
+
+b = set(L)
+
+print(b)
+# {1,2,3}
+
+b_list = list(b)
+
+print(b_list)
+# [1,2,3]
+
+text = "The Zen of PythonBeautiful is better than ugly.Explicit is better than implicit.Simple is better than complex.Complex is better than complicated.Flat is better than nested.Sparse is better than dense.Readability counts.Special cases aren't special enough to break the rules.Although practicality beats purity.Errors should never pass silently.Unless explicitly silenced.In the face of ambiguity, refuse the temptation to guess.There should be one-- and preferably only one --obvious way to do it.Although that way may not be obvious at first unless you're Dutch.Now is better than never.Although never is often better than *right* now.If the implementation is hard to explain, it's a bad idea.If the implementation is easy to explain, it may be a good idea.Namespaces are one honking great idea -- let's do more of those!"
+
+unique = list(set(text))
+
+print("Количество уникальных символов: ", len(unique))
+
+abons = {"Иванов", "Петров", "Васильев", "Антонов"}
+
+debtors = {"Петров", "Антонов"}
+
+non_debtors = abons.difference(debtors)
+
+print(non_debtors)
+# {'Васильев', 'Иванов'}
+
+a = input("Введите первую строку: ")
+b = input("Введите вторую строку: ")
+
+a_set, b_set = set(a), set(b) # используем множественное присваивание
+
+a_and_b = a_set.union(b_set)
+
+print(a_and_b)
+
+# Напишите числа в порядке возрастания через пробел, которые выведет программа из предыдущего задания,
+# если на вход подаются две последовательности чисел:
+
+# 1 2 3 4 5 6 7 8
+# 2 4 6 8 10 12
