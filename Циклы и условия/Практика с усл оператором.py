@@ -20,9 +20,10 @@
 #    print("Вы забыли ввести пароль! Повторите попытку ещё раз")
 
 # Условие задачи: запишите условие проверки, которое является истинным, когда каждое из чисел А и В нечётное.
+A, B = 20, 10
 if A % 2 == 1 and B % 2 == 1:
     print('Числа А и B нечетные')
-
+x,  y = 3, 6
 if x > 0 and y > 0:
     print("Первая четверть")
 if x > 0 and y < 0:
@@ -31,7 +32,7 @@ if x < 0 and y > 0:
     print("Вторая четверть")
 if x < 0 and y < 0:
     print("Третья четверть")
-
+a = 13
 if a == 10:
     print('a равно 10')
 elif a < 10:
@@ -39,7 +40,7 @@ elif a < 10:
 else:
     print('a больше 10')
 
-month = int(input())
+month = int(input("Введите число месяца"))
 
 if month in [3, 4, 5]:
     print("Весна")
@@ -63,12 +64,14 @@ elif wind >= 19:
 
 login_list = [
    'root',
-   'username1'
+   'username1', 
+   'f0x1'
    ]
 
 password_list = {
    'root': '1q2w3e4r',
-   'username1': 'qwerty123'
+   'username1': 'qwerty123',
+   'f0x1': '13310011'
 }
 
 username = input('Введите логин:\n')
