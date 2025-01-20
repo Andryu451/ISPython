@@ -112,4 +112,3 @@ print(min_index_rows)
 print(max_value_rows)
 print(max_index_rows)
 
-
