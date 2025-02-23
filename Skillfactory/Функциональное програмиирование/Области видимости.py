@@ -243,6 +243,7 @@ def correct_func(name_arg=None):
    print("Аргумент после изменения", name_arg)
 
 # вызовем два раза одну и ту же функцию
+print("correct func")
 correct_func()
 print('-----')
 correct_func()
@@ -270,19 +271,6 @@ def i_love_you():
 
 i_love_you()
 
-def necorrect_func(name_args=[]):
-
-   print("Аргумент до изменения", name_args)
-   print("-------")
-   name_args.append(1)
-   print("Аргумент после изменения", name_args)
-
-necorrect_func()
-necorrect_func()
-necorrect_func()
-
-def inkorect_func(name_arg=[]):
-   print("Аргумент до изменения", name_arg)
 
 # Рекурсивные функции
 # Рекурсивная функция — это функция, вызывающая сама себя и обрабатывающая полученный результат до тех пор, 
