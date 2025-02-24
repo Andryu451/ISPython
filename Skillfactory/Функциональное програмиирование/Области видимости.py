@@ -302,7 +302,7 @@ def rec_fib(n):
    if n == 2:
       return 1
    return rec_fib(n-1) + rec_fib(n-2)
-print(rec_fib(11))
+print(rec_fib(5))
 
 # Задание 5.3.3
 # Задания на самопроверку.
@@ -324,7 +324,7 @@ def reverse_str(string):
    else:
        return string[-1] + reverse_str(string[:-1])
 
-reverse_str('test')  # tset
+print(reverse_str('test'))  # tset
 
 # Задание 5.3.5
 # Дано натуральное число N. Вычислите сумму его цифр.
@@ -338,4 +338,4 @@ def sum_digit(n):
    else:
        return n % 10 + sum_digit(n // 10)
 
-sum_digit(123)  # 6
+print(sum_digit(123))  # 6
