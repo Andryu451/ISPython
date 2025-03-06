@@ -330,7 +330,6 @@ print(reverse_str('test'))  # tset
 # Дано натуральное число N. Вычислите сумму его цифр.
 
 # При решении этой задачи нельзя использовать строки, списки, массивы (ну и циклы, разумеется).
-
 # Решение
 def sum_digit(n):
    if n < 10:
@@ -338,4 +337,15 @@ def sum_digit(n):
    else:
        return n % 10 + sum_digit(n // 10)
 
+
 print(sum_digit(123))  # 6
+
+def factorial_recursive(n):
+    if n == 1:
+        return n
+    else:
+        return n*factorial_recursive(n-1)
+    
+
+num = 3
+print(f"Факториал {num} это {factorial_recursive(num)}")
