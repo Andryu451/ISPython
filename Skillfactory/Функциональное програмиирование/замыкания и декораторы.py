@@ -289,17 +289,17 @@ print(my_function)  # <function my_decorator.<locals>.wrapper at 0x7f93837059d8>
 # Передача аргументов в декорируемую функцию
 # До этого мы с вами декорировали только функции без аргументов. Но что будет, если мы попытаемся задекорировать функцию с аргументами?
 
-def do_it_twice(func):
-    def wrapper():
-        func(arg)
-        func(arg)
-    return wrapper
+# def do_it_twice(func):
+#     def wrapper():
+#         func(arg)
+#         func(arg)
+#     return wrapper
 
-@do_it_twice
-def say_word(word):
-    print(word)
+# @do_it_twice
+# def say_word(word):
+#     print(word)
 
-say_word("Oo!!!")
+# say_word("Oo!!!")
 # При выполнении данного кода будет выведена такая ошибка:
 
 # TypeError: wrapper() takes 0 positional arguments but 1 was given
